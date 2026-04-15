@@ -1,14 +1,15 @@
-# Rameera Low Stock Notification
+# Rameera Inventory Alert
 
-`Rameera_LowStockNotification` sends a low-stock summary email to an admin recipient on a scheduled cron interval.
+`Rameera_LowStockNotification` monitors inventory thresholds and delivers a scheduled low-stock digest email to the configured admin recipient.
 
 ## Features
 
-- Detects low stock products from Magento reports inventory data.
-- Sends an email summary with product name, SKU, and quantity.
-- Configurable enable/disable toggle in admin.
-- Configurable recipient email and email template.
-- Compatible with modern Magento 2.4 installations.
+- Scans inventory using Magento's built-in reports low-stock collection.
+- Delivers a digest email listing each at-risk product with name, SKU, and current quantity.
+- Enable/disable toggle and recipient address configurable in admin.
+- Swappable transactional email template.
+- Zero legacy code — built on `DataPatchInterface`, constructor promotion, and `declare(strict_types=1)`.
+- Compatible with Magento 2.4.4+ and PHP 8.1 through 8.4.
 
 ## Compatibility
 
@@ -34,7 +35,7 @@ php bin/magento cache:flush
 ### Install with Composer (VCS repository)
 
 ```bash
-composer require arjundhi/module-low-stock-notification
+composer require arjundhi/magento2-inventory-alert
 php bin/magento module:enable Rameera_LowStockNotification
 php bin/magento setup:upgrade
 php bin/magento cache:flush
@@ -85,13 +86,13 @@ It validates Composer metadata, PHP syntax, and XML well-formedness.
 Stable production install:
 
 ```bash
-composer require arjundhi/module-low-stock-notification:^1.0
+composer require arjundhi/magento2-inventory-alert:^1.0
 ```
 
 Staging/dev install (before first stable tag is visible):
 
 ```bash
-composer require arjundhi/module-low-stock-notification:"dev-main@dev"
+composer require arjundhi/magento2-inventory-alert:"dev-main@dev"
 ```
 
 ## License
