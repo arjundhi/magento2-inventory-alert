@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Rameera\LowStockNotification\Helper;
+namespace MageMatch\InventoryAlert\Helper;
 
 use Magento\Framework\App\Area;
 use Magento\Framework\App\Helper\AbstractHelper;

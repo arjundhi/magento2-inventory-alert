@@ -1,13 +1,13 @@
 <?php
 declare(strict_types=1);
 
-namespace Rameera\LowStockNotification\Cron;
+namespace MageMatch\InventoryAlert\Cron;
 
 use Magento\Catalog\Api\ProductRepositoryInterface;
 use Magento\Framework\Data\Collection as DataCollection;
 use Magento\Framework\Exception\NoSuchEntityException;
-use Rameera\LowStockNotification\Model\LowStockCollectionFactory;
-use Rameera\LowStockNotification\Helper\Email;
+use MageMatch\InventoryAlert\Model\LowStockCollectionFactory;
+use MageMatch\InventoryAlert\Helper\Email;
 
 class Notification
 {

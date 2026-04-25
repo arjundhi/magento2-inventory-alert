@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Rameera\LowStockNotification\Model;
+namespace MageMatch\InventoryAlert\Model;
 
 use Magento\Framework\ObjectManagerInterface;
 use Magento\Reports\Model\ResourceModel\Product\Lowstock\Collection;
