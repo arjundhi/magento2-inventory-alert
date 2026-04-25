@@ -6,9 +6,9 @@
 > Part of the [MageMatch](https://magematch.com) 
 > developer ecosystem
 
-# Rameera Inventory Alert
+# MageMatch Inventory Alert
 
-`Rameera_LowStockNotification` monitors inventory thresholds and delivers a scheduled low-stock digest email to the configured admin recipient.
+`MageMatch_LowStockNotification` monitors inventory thresholds and delivers a scheduled low-stock digest email to the configured admin recipient.
 
 ## Features
 
@@ -30,12 +30,12 @@
 
 Place the module under:
 
-`app/code/Rameera/LowStockNotification`
+`app/code/MageMatch/LowStockNotification`
 
 Then run:
 
 ```bash
-php bin/magento module:enable Rameera_LowStockNotification
+php bin/magento module:enable MageMatch_LowStockNotification
 php bin/magento setup:upgrade
 php bin/magento cache:flush
 ```
@@ -44,7 +44,7 @@ php bin/magento cache:flush
 
 ```bash
 composer require arjundhi/magento2-inventory-alert
-php bin/magento module:enable Rameera_LowStockNotification
+php bin/magento module:enable MageMatch_LowStockNotification
 php bin/magento setup:upgrade
 php bin/magento cache:flush
 ```
